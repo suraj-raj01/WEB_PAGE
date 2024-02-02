@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkcyan;
+    color: white;
+}
+.navbar #mid ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar #mid ul li{
+    padding: 0px 15px;
+    font-weight: 800;
+    color: white;
+}
+.navbar #mid ul li:hover{
+    color: tomato;
+    cursor: pointer;
+}
+.navbar #mid ul a{
+    text-decoration: none;
+}
+.navbar #mid #home{
+    color: tomato;
+}
+.navbar #end button{
+    padding: 10px 15px;
+    border: 1px solid;
+    color: white;
+    font-weight: 800;
+    border-radius: 5px;
+    transition: .6s;
+    background-color: transparent;
+}
+.navbar #end button:hover{
+    cursor: pointer;
+    background-color: tomato;
+    transition: .6s;
+}
+body{
+    background-color: darkcyan;
+}
+.hero{
+    height: 78vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    margin: 10px 0px;
+}
+#hero1 {
+    height: 85vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: white;
+}
+.hero #hero1 #box1{
+    height: 8vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 40px;
+    justify-content: start;
+    color: #c3bebe;
+}
+.hero #hero1 #box2{
+    height: 10vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    font-size: 80px;
+    justify-content: start;
+    font-weight: 800;
+    color: #cecdcd;
+    text-shadow: 3px 3px 10px black;
+}
+
+.hero #hero1 #box2 p{
+    font-weight: 800;
+    font-size: 80px;
+    color: #cecdcd;
+}
+.hero #hero1 #box4{
+    font-size: 25px;
+    padding: 7px 20px;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}
+.hero #hero1 a{
+    text-decoration: none;
+    color: azure;
+    font-size: 18px;
+}
+#hero2{
+    height: 60vh;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid tomato;
+}
+/* =============position absolute================== */
+#hero2 #photo{
+    top: 18vh;
+    right: 17vh;
+    height: 60vh;
+    width: 50vh;
+    background-image: url("./photo/ItsMe-transp.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    background-color: #000;
+    border: 10px solid #fff;
+}
+
+/* =============position sticky================ */
+
+.help{
+    height: 5vh;
+    width: 5vh;
+    position: sticky;
+    top: 50%;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+.help p{
+    font-weight: 800;
+    color: white;
+}
+.help i{
+    font-size: 25px;
+    color: white;
+    padding: 10px 12px;
+    border: 2px solid;
+    border-radius: 50px;
+    z-index: 4;
+    background-color: green;
+}
+
+/* =============position fixed================ */
+.icon{
+    height: 35vh;
+    width: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 35vh;
+    right: 3vh;
+    /* border: 1px solid; */
+}
+.icon i{
+    color: white;
+    font-size: 30px;
+}
+.icon i:hover{
+    color: tomato;
+    text-shadow: 0px 0px 5px black;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#section-box1{
+    height: 60vh;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid tomato;
+}
+/* ==============display relative================= */
+#section-box1 #section-box1-image{
+    bottom: 5vh;
+    right: 5vh;
+    height: 60vh;
+    width: 55vh;
+    background-image: url("./photo/DSC_4367.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    background-color: #000;
+    border: 10px solid azure;
+}
+#section-box2{
+    height: 55vh;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    /* border: 1px solid; */
+    padding: 20px 100px;
+    color: white;
+}
+#section-box2  #about{
+    font-weight: 800;
+    font-size: 40px;
+    padding: 10px 0px;
+}
+#section-box2 #para{
+    font-size: 14px;
+}
+#section-box2  #btn{
+    padding: 10px 15px;
+    background-color: orangered;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
+}
